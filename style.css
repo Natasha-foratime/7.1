@@ -1,0 +1,78 @@
+body {
+    text-align: center;
+}
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header {
+    background-color: salmon;
+    /* border: 2px solid black; */
+    height: 13vh;
+    padding: 10px;
+}
+main {
+    background-color: rgb(255, 62, 41);
+    /* border: 2px solid black; */
+    height: 65vh;   
+}
+article {
+    background-color:yellow;
+    /* border: 2px solid black; */
+    width: 75%;
+}
+.zero {
+    border: 2px solid gold;
+    flex-grow: 1;
+}
+section {
+    /* border: 2px solid black; */
+    height: 13vh;
+    margin: 10px;
+    padding: 10px;
+}
+.color {
+    background-color: gold;
+}
+div>section {
+    width: 100%;
+}
+aside {
+    background-color: yellowgreen;
+    /* border: 2px solid black; */
+    padding: 10px;
+    width: 25%;
+}
+footer {
+    background-color: salmon;
+    /* border: 2px solid black; */
+    height: 20vh;
+}
+footer>section {
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 460px) {
+    .adaptive-moveit {
+        flex-direction: column;
+    }
+    .adaptive-horizontalrazmer {
+        height: 100%;
+        width: 100%;
+    }
+    .adaptive-wrap {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    .adaptive-padding {
+        padding: 0px;
+    }
+    .adaptive-hight {
+        height: 80vh;
+    }
+}
